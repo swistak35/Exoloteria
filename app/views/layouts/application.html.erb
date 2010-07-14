@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exoloteria - Loteria serwera Exodus</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	<div id='main'>
+	<% logger.info %>
+		<div id='header'></div>
+		<div id='content'>
+			<div id='left'>
+				<div id='menu'>
+					<ul>
+						<li><%= link_to "Główna", root_path %></li>
+						<li><%= link_to "Nagrody - ally", '/rewards/ally' %></li>
+						<li><%= link_to "Nagrody - horda", '/rewards/horda' %></li>
+						<li><%= link_to "Zwycięzcy", '/winners' %></li>
+					</ul>
+				</div>
+				<%= yield %>
+			</div>
+			<div id='right'>
+				<div id='ostatni'>
+					<%@winners = Winner.order("created_at DESC") %>
+					<%= render '/winners/list' %>
+				</div>
+			</div>
+		</div>
+		<div id='footer'>
+			<p>Copyright by Świstak35</p>
+			<p><%= image_tag("rails.png") %></p>
+		</div>
+	</div>
+</body>
+</html>

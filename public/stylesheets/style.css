@@ -1,0 +1,117 @@
+body {
+	background-color: #E6E6E6;
+	font-family: Arial, Helvetica, Verdana, sans-serif
+}
+
+#main {
+	width: 772px;
+	border: 2px double #B3B3B3;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #DEDEDE;
+}
+
+#header {
+	background: url('../images/header.png') no-repeat center;
+	height: 150px;
+	width: 772px;
+}
+
+#footer {
+	clear: both;
+	background-color: #D6D6D6;
+	font-style: italic;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.special {
+	border: 1px solid #000000;
+	border-style: collapse;
+	width: 100%
+}
+
+.special td, .special th {
+	border: 1px solid #000000;
+}
+
+#left {
+	width: 590px;
+	float: left;
+}
+
+#right {
+	width: 162px;
+	float: right;
+	border-left: 2px solid #B3B3B3;
+}
+
+#content {
+	margin-bottom: 20px;
+}
+
+.date {
+	font-style: italic;
+	font-size: 8pt;
+}
+
+#ostatni:before {
+	content: url('../images/ostatni.png');
+}
+
+#adminpanel:before {
+	content: url('../images/adminpanel.png');
+}
+
+#menu ul, #menu ul li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul {
+	position: absolute;
+}
+
+#menu ul li {
+	float: left;
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: transparent #989898 #989898 #d1d1d1;
+}
+
+#menu ul a:link, #menu ul a:visited {
+	text-decoration: none;
+	display: block;
+	width: 150px;
+	text-align: center;
+	padding: 5px 0;
+	font-weight: bold;
+	background-color: #929292;
+	color: #def;
+	border-top: 10px solid #606060;
+}
+
+#menu ul a:hover {
+	background-color: #b7b7b7;
+	color: #fff;
+	border-top: 20px solid #6d6d6d;
+}
+
+#menu {
+	height: 70px;
+}
+
+img {
+	border: none;
+}
+
+.horda {
+	background-color: #FF0033;
+}
+
+.ally {
+	background-color: #0066FF;
+}

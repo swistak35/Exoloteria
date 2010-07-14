@@ -1,0 +1,76 @@
+=> Booting WEBrick
+=> Rails 3.0.0.beta3 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Started GET "/losuj" for 127.0.0.1 at 2010-07-13 01:03:56
+  Processing by WinnersController#new as HTML
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mWinner Load (0.1ms)[0m  SELECT "winners".* FROM "winners"
+Rendered winners/_list.html.erb (0.8ms)
+Rendered winners/new.html.erb within layouts/application (94.2ms)
+Completed 200 OK in 141ms (Views: 97.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/public/images/header.png" for 127.0.0.1 at 2010-07-13 01:03:59
+
+ActionController::RoutingError (No route matches "/public/images/header.png"):
+  
+
+Rendered /home/swistak35/.rvm/gems/ruby-1.9.2-head@rails3pre/gems/actionpack-3.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/public/images/ostatni.png" for 127.0.0.1 at 2010-07-13 01:03:59
+
+ActionController::RoutingError (No route matches "/public/images/ostatni.png"):
+  
+
+Rendered /home/swistak35/.rvm/gems/ruby-1.9.2-head@rails3pre/gems/actionpack-3.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/public/images/adminpanel.png" for 127.0.0.1 at 2010-07-13 01:03:59
+
+ActionController::RoutingError (No route matches "/public/images/adminpanel.png"):
+  
+
+Rendered /home/swistak35/.rvm/gems/ruby-1.9.2-head@rails3pre/gems/actionpack-3.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/winners" for 127.0.0.1 at 2010-07-13 01:04:07
+  Processing by WinnersController#index as HTML
+  Parameters: {"authenticity_token"=>"tmqYFwXRMsgqxFgf4Dks08+Re2LHbu6doJyZAtJrjBM=", "winner"=>{"nick"=>"Rafal", "fraction"=>"ally"}, "commit"=>"Create Winner"}
+  [1m[36mWinner Load (0.5ms)[0m  [1mSELECT "winners".* FROM "winners"[0m
+Rendered winners/_list.html.erb (0.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "winners".* FROM "winners"
+Rendered winners/_list.html.erb (0.8ms)
+Rendered winners/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 31ms (Views: 11.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/public/images/header.png" for 127.0.0.1 at 2010-07-13 01:04:07
+
+ActionController::RoutingError (No route matches "/public/images/header.png"):
+  
+
+Rendered /home/swistak35/.rvm/gems/ruby-1.9.2-head@rails3pre/gems/actionpack-3.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/public/images/adminpanel.png" for 127.0.0.1 at 2010-07-13 01:04:07
+
+ActionController::RoutingError (No route matches "/public/images/adminpanel.png"):
+  
+
+Rendered /home/swistak35/.rvm/gems/ruby-1.9.2-head@rails3pre/gems/actionpack-3.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/public/images/ostatni.png" for 127.0.0.1 at 2010-07-13 01:04:07
+
+ActionController::RoutingError (No route matches "/public/images/ostatni.png"):
+  
+
+Rendered /home/swistak35/.rvm/gems/ruby-1.9.2-head@rails3pre/gems/actionpack-3.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+Exiting

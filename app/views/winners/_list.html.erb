@@ -1,0 +1,11 @@
+<table style='width: 100%;' border=0 cellspacing=0 cellpadding=0>
+	<% @winners.each do |winner| %>
+		<tr class='<%= winner.fraction %>'>
+			<td rowspan=2><a href='http://www.wowhead.com/item=<%= winner.reward.wowhead %>' title='<%= winner.reward.name %>'><img src='http://static.wowhead.com/images/wow/icons/medium/<%= winner.reward.picture %>' /></a></td>
+			<td style='font-weight: bold;'><%= winner.nick %></td>
+		</tr>
+		<tr class='<%= winner.fraction %>'>
+			<td style='font-style: italic;'><%= winner.created_at %></td>
+		</tr>
+	<% end %>
+</table>

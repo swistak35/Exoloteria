@@ -1,0 +1,35 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @reward.name %>
+</p>
+
+<p>
+  <b>Rate:</b>
+  <%= @reward.rate %>
+</p>
+
+<p>
+  <b>Ally:</b>
+  <%= @reward.ally %>
+</p>
+
+<p>
+  <b>Horda:</b>
+  <%= @reward.horda %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= @reward.picture %>
+</p>
+
+<p>
+  <b>Wowhead:</b>
+  <%= @reward.wowhead %>
+</p>
+
+
+<%= link_to 'Edit', edit_reward_path(@reward) %> |
+<%= link_to 'Back', rewards_path %>

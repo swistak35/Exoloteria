@@ -1,0 +1,30 @@
+<h3>Losuj nagrodę</h3>
+
+<%= form_for(@winner) do |f| %>
+  <% if @winner.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@winner.errors.count, "error") %> błędów:</h2>
+    <ul>
+    <% @winner.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nick %><br />
+    <%= f.text_field :nick %>
+  </div>
+  <div class="field">
+    <%= f.label :fraction %><br />
+    <!--<%#= f.select_tag :fraction, '<option value=""></option><option value="ally">Ally</option><option value="horda">Horda</option>' %>-->
+    <%= f.text_field :fraction %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+<%= link_to 'Wróć', rewards_path %>

@@ -1,0 +1,19 @@
+<table class='special'>
+	<% @rewards.each do |reward| %>
+		<tr>
+			<td rowspan=2>
+				<a href='http://www.wowhead.com/item=<%= reward.wowhead %>' title='<%= reward.name %>'>
+					<img src='http://static.wowhead.com/images/wow/icons/medium/<%= reward.picture %>' />
+				</a>
+			</td>
+			<td>
+				<b><%= reward.name %></b>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<i>Szanse: <%= count_chances(reward) %>%</i><% if @fraction == '' then %>, <%= link_to 'Edytuj', edit_reward_path(reward) %>, <%= link_to 'Usun', reward, :confirm => 'Jestes pewien?', :method => :delete %> <% end %>				
+			</td>
+		</tr>
+	<% end %>
+</table>

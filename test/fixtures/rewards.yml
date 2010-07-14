@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  rate: 
+  ally: 
+  horda: 
+  picture: MyString
+  wowhead: 
+
+two:
+  name: MyString
+  rate: 
+  ally: 
+  horda: 
+  picture: MyString
+  wowhead: 
