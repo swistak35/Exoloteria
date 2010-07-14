@@ -1,4 +1,7 @@
 class RewardsController < ApplicationController
+  
+  before_filter :authenticate, :except => [:ally, :horda, :receive_quantity]
+  
   # GET /rewards
   # GET /rewards.xml
   def index

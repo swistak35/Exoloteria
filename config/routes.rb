@@ -1,8 +1,8 @@
 Exoloteria::Application.routes.draw do |map|
 
   root :to => "home#index"
-  match 'rewards/ally' => 'rewards#ally'
-  match 'rewards/horda' => 'rewards#horda'
+  match 'ally' => 'rewards#ally'
+  match 'horda' => 'rewards#horda'
   match 'losuj' => 'winners#new'
   resources :winners
   resources :rewards

@@ -1,7 +1,10 @@
 class WinnersController < ApplicationController
+  
+  before_filter :authenticate, :except => [:index]
+  
   def index
     @winners = Winner.order("created_at DESC")
-
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @winners }
