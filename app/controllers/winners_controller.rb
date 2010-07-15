@@ -38,7 +38,8 @@ class WinnersController < ApplicationController
   end
   
   def choose_reward
-    available_rewards = Reward.where(["? > ?", @winner.fraction, 0])
+    available_rewards = Reward.where(["ally > ?", 0]) if @winner.fraction == 'ally'
+    available_rewards = Reward.where(["horda > ?", 0]) if @winner.fraction == 'horda'
     array = []
     available_rewards.each do |reward|
       howmany = reward.rate * reward.ally if @winner.fraction == 'ally'
