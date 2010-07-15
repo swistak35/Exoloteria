@@ -38,7 +38,7 @@ class WinnersController < ApplicationController
   end
   
   def choose_reward
-    available_rewards = Reward.where(["? > ?", @winner.fraction, 0])
+    available_rewards = Reward.all
     array = []
     available_rewards.each do |reward|
       howmany = reward.rate * reward.ally if @winner.fraction == 'ally'
