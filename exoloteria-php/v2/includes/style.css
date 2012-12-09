@@ -1,0 +1,102 @@
+body {
+	background-color: #E6E6E6;
+}
+
+#main {
+	width: 772px;
+	border: 2px double #B3B3B3;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #DEDEDE;
+}
+
+#header {
+	background: url('/includes/header.png') no-repeat center;
+	height: 150px;
+	width: 772px;
+}
+
+#footer {
+	clear: both;
+	background-color: #D6D6D6;
+	font-style: italic;
+	text-align: center;
+}
+
+.special {
+	border: 1px solid #000000;
+	border-style: collapse;
+	width: 100%
+}
+
+.special td, .special th {
+	border: 1px solid #000000;
+}
+
+#left {
+	width: 590px;
+	float: left;
+}
+
+#right {
+	width: 162px;
+	float: right;
+	border-left: 1px solid #B3B3B3;
+}
+
+#content {
+	margin-bottom: 20px;
+}
+
+.date {
+	font-style: italic;
+	font-size: 6pt;
+}
+
+#ostatni:before {
+	content: url('/includes/ostatni.png');
+}
+
+#adminpanel:before {
+	content: url('/includes/adminpanel.png');
+}
+
+#menu ul, #menu ul li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul {
+	position: absolute;
+}
+
+#menu ul li {
+	float: left;
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: transparent #25b #25b #9ce;
+}
+
+#menu ul a:link, #menu ul a:visited {
+	text-decoration: none;
+	display: block;
+	width: 95px;
+	text-align: center;
+	padding: 5px 0;
+	font-weight: bold;
+	background-color: #27c;
+	color: #def;
+	border-top: 10px solid #25b;
+}
+
+#menu ul a:hover {
+	background-color: #28e;
+	color: #fff;
+	border-top: 20px solid #26d;
+}
+
+#menu {
+	height: 70px;
+}
